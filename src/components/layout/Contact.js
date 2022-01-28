@@ -1,64 +1,73 @@
 import React from "react";
 import './Contact.css';
+import Footer from "./Footer";
+import Header from "./Header";
 
 function Contact(){
     return(
         <>
-        
+		<Header/>
+        <br/><br/><br/><br/><br/>
 	<div class="container">
-		<div class="innerwrap">
-		
-			<section class="section1 clearfix">
-				<div class="textcenter">
-					<span class="shtext">Contact Us</span>
-					<span class="seperator"></span>
-					<h1>Drop Us a Mail</h1>
-				</div>
-			</section>
-		
-			<section class="section2 clearfix">
-				<div class="col2 column1 first">
-					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-                    <div class="sec2map" style='overflow:hidden;height:550px;width:100%;'>
-                        <div id='gmap_canvas' style='height:100%;width:100%;'></div>
-                        <div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small>
-                        </div><div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div>
-                       
-				</div>
-                </div>
-				<div class="col2 column2 last">
-					<div class="sec2innercont">
-						<div class="sec2addr">
-							<p>45 BC, a Latin professor at Hampden-Sydney College in Virginia</p>
-							<p><span class="collig">Phone :</span> +91 976885083</p>
-							<p><span class="collig">Email :</span> vivek.mengu016@gmail.com</p>
-							<p><span class="collig">Fax :</span> +91 9768850839</p>
-						</div>
-					</div>
-					<div class="sec2contactform">
-						<h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
-						<form action="">
-							<div class="clearfix">
-								<input class="col2 first" type="text" placeholder="FirstName"/>
-								<input class="col2 last" type="text" placeholder="LastName"/>
-							</div>
-							<div class="clearfix">
-								<input  class="col2 first" type="Email" placeholder="Email"/>
-								<input class="col2 last" type="text" placeholder="Contact Number"/>
-							</div>
-							<div class="clearfix">
-								<textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
-							</div>
-							<div class="clearfix"><input type="submit" value="Send"/></div>
-						</form>
-					</div>
 
-				</div>
-			</section>
+
+
+<div class="wrapper">
+
+	
+	<div class="company-info">
 		
-		</div>
+
+		<ul>
+			<li><i class="fa fa-road"></i> 44 Main Street</li>
+			<li><i class="fa fa-phone"></i> (555) 555-5555</li>
+			<li><i class="fa fa-envelope"></i> test@phoenix.com</li>
+		</ul>
 	</div>
+	
+	<div class="contact">
+		<h3>E-mail Us</h3>
 
+		<form id="contact-form">
+
+			<p>
+				<label>Name</label>
+				<input type="text" name="name" id="name" required/>
+			</p>
+
+			<p>
+				<label>Company</label>
+				<input type="text" name="company" id="company"/>
+			</p>
+
+			<p>
+				<label>E-mail Address</label>
+				<input type="email" name="email" id="email" required/>
+			</p>
+
+			<p>
+				<label>Phone Number</label>
+				<input type="text" name="phone" id="phone"/>
+			</p>
+
+			<p class="full">
+				<label>Message</label>
+				<textarea name="message" rows="5" id="message"></textarea>
+			</p>
+
+			<p class="full">
+				<button type="submit">Submit</button>
+			</p>
+
+		</form>
+	
+	</div>
+	
+</div>
+
+</div>
+
+<Footer/>
         
         </>
     )

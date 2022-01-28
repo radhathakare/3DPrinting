@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import Logo from './partials/Logo';
-import Contact from './Contact';
+
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -113,7 +113,7 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>Home</Link>
+                      <Link to="/" onClick={closeMenu}>Home</Link>
                     </li>
                   </ul>
                   <ul className={
@@ -122,7 +122,7 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="#0" onClick={closeMenu}>About us</Link>
+                      <Link to="/about" onClick={closeMenu}>About us</Link>
                     </li>
                   </ul>
                   <ul className={
@@ -140,7 +140,7 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
                     <li>
-                      <Link to="Contact" onClick={closeMenu}>Contact</Link>
+                    <Link className="navBarTabs" to="/contact" style={{marginRight: "65px"}}>Contact</Link>
                     </li>
                   </ul>
                   {/* {!hideSignin &&
