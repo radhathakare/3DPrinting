@@ -6,26 +6,30 @@ import Header from "./Header";
 function Contact(){
     return(
         <>
-		<Header/>
+		 <Header navPosition="right" className="reveal-from-bottom" />
         <br/><br/><br/><br/><br/>
-	<div class="container">
+	<div className="container">
+	<div className="section-head col-sm-12 reveal-from-bottom" data-reveal-delay="400">
+          <h4><span>Contact Us</span></h4>
+          
+        </div>
 
 
 
-<div class="wrapper">
+<div className="wrapper reveal-from-bottom" data-reveal-delay="400">
 
 	
-	<div class="company-info">
+	<div className="company-info">
 		
 
 		<ul>
-			<li><i class="fa fa-road"></i> 44 Main Street</li>
-			<li><i class="fa fa-phone"></i> (555) 555-5555</li>
-			<li><i class="fa fa-envelope"></i> test@phoenix.com</li>
+			<li><i className="fa fa-road"></i> 44 Main Street</li>
+			<li><i className="fa fa-phone"></i> (555) 555-5555</li>
+			<li><i className="fa fa-envelope"></i> test@phoenix.com</li>
 		</ul>
 	</div>
 	
-	<div class="contact">
+	<div className="contact">
 		<h3>E-mail Us</h3>
 
 		<form id="contact-form">
@@ -50,12 +54,12 @@ function Contact(){
 				<input type="text" name="phone" id="phone"/>
 			</p>
 
-			<p class="full">
+			<p className="full">
 				<label>Message</label>
 				<textarea name="message" rows="5" id="message"></textarea>
 			</p>
 
-			<p class="full">
+			<p className="full">
 				<button type="submit">Submit</button>
 			</p>
 

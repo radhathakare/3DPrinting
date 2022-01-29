@@ -44,7 +44,7 @@ text-decoration: none;
 color: inherit;
 }
 .row{
-    display: flex;
+    display: inline-flex;
     
 }
 .col1{
